@@ -3,7 +3,8 @@
  import Card from "$lib/components/Card.svelte";
  import Button from "$lib/components/Button.svelte";
  import Inputbar from "$lib/components/Inputbar.svelte";
- 
+ import Text from "$lib/components/Text.svelte";
+ import Anchor from "$lib/components/Anchor.svelte";
  export let result = "";
  export let city = "";
   
@@ -41,21 +42,30 @@
      }
 }
 </script>
+<Anchor id="search" />
+<div id="bg">
 
-
-<main>
+	<Text>
 	<form on:submit={handleSubmit}>
 		<Inputbar bind:value={city} />
 		<Button type="submit" caption="Search" />
 	</form>
+</Text>
 	<section id="searchitems">
 		{#each searchitems as searchitem}
 			<Card city={searchitem.city} temp={searchitem.temp} icon={searchitem.icon} />
 		{/each}
 	</section>
-</main>
+
+
+</div>
 
 <style>
+	  #bg {
+  background-color: rgb(68, 68, 116);
+  padding-top:5rem;
+  height: 100vh; 
+  }
    section {
   
     display: grid;

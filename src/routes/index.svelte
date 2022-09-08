@@ -4,7 +4,6 @@
 
 <script lang="ts">
   import SEO from "svelte-seo";
-  import Content from "$lib/pages/Content.svelte";
   import Home from "$lib/pages/Home.svelte";
   import Footer from "$lib/pages/Footer.svelte";
  import Search from  "$lib/pages/Search.svelte";
@@ -21,7 +20,6 @@
 
 <Home />
 <!--About me/bio-->
-<Content backgroundClass={primaryBackground} />
 <Search/>
 
 <Footer  />

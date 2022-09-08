@@ -4,47 +4,7 @@
  
   let color = "text-grey-200";
   let hover = "sm:hover:text-primary-500";
-  import withQuery from "with-query"
- import Card from "$lib/components/Card.svelte";
- import Button from "$lib/components/Button.svelte";
- import Inputbar from "$lib/components/Inputbar.svelte";
  
- export let result = "";
- export let city = "";
-  
- let searchitems = [];
- let url ="";
- const cache = new Map();
-
- async function handleSubmit(e) {
-	e.preventDefault();
-	
-	url = withQuery('https://api.openweathermap.org/data/2.5/weather', {
-		q: city,
-		units: 'imperial',
-		appid: '271d1234d3f497eed5b1d80a07b3fcd1', //YOUR_API_KEY
-	 })
-
-	if(cache.has(url)){
-			alert("City already exists!")
-	 } 
-	else{
-   
-		await fetch(url)
-			.then(resp => resp.json())
-			.then(data => (result = data));
-
-		const newSearchitem = {
-			id: Math.random().toString(),
-			city: result["name"],
-			temp: result["main"]["temp"],
-			icon: result["weather"][0]["icon"],
-	     };
-
-		searchitems = [...searchitems, newSearchitem];
-		cache.set(url);
-     }
-}
 </script>
 
 <Anchor id="home" />
@@ -52,17 +12,9 @@
   class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
   id="bg"
 >
-<main>
-	<form on:submit={handleSubmit}>
-		<Inputbar bind:value={city} />
-		<Button type="submit" caption="Search" />
-	</form>
-	<section id="searchitems">
-		{#each searchitems as searchitem}
-			<Card city={searchitem.city} temp={searchitem.temp} icon={searchitem.icon} />
-		{/each}
-	</section>
-</main>
+  <div class="text-center">
+    <h1 class="text-5xl m-6 {color} font-light"> Welcome! </h1>
+  </div>
 
 </div>
 
@@ -75,16 +27,21 @@
     
   }
 
-  section {
-  
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  section {
-    grid-template-columns: repeat(6, 1fr);
+  .text-2{
+  font-size: 1.8rem;  
+  margin: 0rem;
+  margin-top: 0rem;
+  font-weight: 200;
+  line-height: 3rem;
+  color:rgb(215, 219, 223);
+ }    
+ 
+  .subtitle {
+    font-size: 1.8rem; 
+     margin: 0rem;
+    font-weight: 200;
+    color:rgb(215, 219, 223);
+    padding-left: 3vw;
+    
   }
-}
 </style>

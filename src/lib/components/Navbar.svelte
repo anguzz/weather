@@ -26,10 +26,10 @@
       title: "Home",
     },
     {
-      id: "#content",
-      route: "/content",
-      name: "content",
-      title: "content",
+      id: "#search",
+      route: "/search",
+      name: "search",
+      title: "Search",
     },
 
   ];
