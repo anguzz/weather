@@ -1,10 +1,5 @@
-<script lang="ts">
-  import Anchor from "$lib/components/Anchor.svelte";
-
- 
-  let color = "text-grey-200";
-  let hover = "sm:hover:text-primary-500";
-  import withQuery from "with-query"
+<script>
+ import withQuery from "with-query"
  import Card from "$lib/components/Card.svelte";
  import Button from "$lib/components/Button.svelte";
  import Inputbar from "$lib/components/Inputbar.svelte";
@@ -47,11 +42,7 @@
 }
 </script>
 
-<Anchor id="home" />
-<div
-  class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
-  id="bg"
->
+
 <main>
 	<form on:submit={handleSubmit}>
 		<Inputbar bind:value={city} />
@@ -64,27 +55,17 @@
 	</section>
 </main>
 
-</div>
-
 <style>
-  #bg {
-    /* The image used background-image: url("/assets/images/background1.jpg"); */
-    background-image: linear-gradient(217deg, rgba(0, 248, 165, 0.8), rgba(255,0,0,0) 70.71%),
-      linear-gradient(127deg, rgba(0, 4, 255, 0.8), rgba(0,255,0,0) 70.71%),
-      linear-gradient(336deg, rgba(248, 248, 248, 0.8), rgba(0,0,255,0) 70.71%);
-    
-  }
-
-  section {
+   section {
   
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  section {
-    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
-}
+
+  @media (min-width: 768px) {
+    section {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
 </style>
