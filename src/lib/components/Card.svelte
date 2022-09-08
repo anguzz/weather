@@ -28,13 +28,20 @@
     border-radius: 5px;
     background: #6B91A4;
     margin: 1.5rem;
-    height: 14rem;
+    height: 10rem;
     text-align: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+
   }
 
   .image {
-    width: 100%;
-    height: 10rem;
+    width: 50%;
+    height: 5rem;
   }
 
   .image img {
