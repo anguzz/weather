@@ -28,7 +28,7 @@
 	 })
 
 	if(cache.has(url)){
-			alert("City already exists!")
+			alert("City already added!")
 	 } 
 	else{
    
