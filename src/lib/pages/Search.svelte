@@ -8,10 +8,16 @@
  export let result = "";
  export let city = "";
   
+ /**
+* @type {any[]}
+*/
  let searchitems = [];
  let url ="";
  const cache = new Map();
 
+ /**
+* @param {{ preventDefault: () => void; }} e
+*/
  async function handleSubmit(e) {
 	e.preventDefault();
 	
@@ -32,12 +38,16 @@
 
 		const newSearchitem = {
 			id: Math.random().toString(),
+			// @ts-ignore
 			city: result["name"],
+			// @ts-ignore
 			temp: result["main"]["temp"],
+			// @ts-ignore
 			icon: result["weather"][0]["icon"],
 	     };
 
 		searchitems = [...searchitems, newSearchitem];
+		// @ts-ignore
 		cache.set(url);
      }
 }

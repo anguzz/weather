@@ -1,6 +1,12 @@
 <script>
-  export let type;
-  export let caption;
+  export /**
+* @type {string | null | undefined}
+*/
+   let type;
+  export /**
+* @type {any}
+*/
+   let caption;
 </script>
 
   <button {type}>{caption}</button>

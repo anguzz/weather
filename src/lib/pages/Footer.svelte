@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Anchor from "$lib/components/Anchor.svelte";
   import IconButton from "$lib/components/IconButton.svelte";
   import Footer from "$lib/components/Footer.svelte";
   let color = "text-blue-300";

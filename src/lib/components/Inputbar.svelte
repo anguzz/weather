@@ -1,5 +1,8 @@
 <script>
-    export let value;
+    export /**
+* @type {any}
+*/
+     let value;
 </script>
 
 <input type="text" name="search" placeholder="Enter city name here" bind:value on:input />

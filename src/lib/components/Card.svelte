@@ -1,7 +1,16 @@
 <script>
-    export let city;
-    export let temp;
-    export let icon;
+    export /**
+* @type {any}
+*/
+     let city;
+    export /**
+* @type {any}
+*/
+     let temp;
+    export /**
+* @type {any}
+*/
+     let icon;
 </script>
 
 <card>
