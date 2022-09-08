@@ -5,7 +5,7 @@
      let value;
 </script>
 
-<input type="text" name="search" placeholder="Enter a city name" bind:value on:input />
+<input type="text" name="search" placeholder="Enter a city name" bind:value on:input autocomplete="off" />
 
 <style> 
 
@@ -23,14 +23,7 @@
       color:#1F2937;
       background-color:#6B91A4;
   }
-  .input:hover{
-    background-color:#6B91A4;
-    color:#1F2937;
-  }
-  .input:autofill{
-    background-color:#6B91A4;
-    color:#1F2937;
-  }
+  
   
 
 </style>
