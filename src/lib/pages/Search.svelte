@@ -56,11 +56,15 @@
 <div id="bg">
 
 	<Text>
+		
+		
 	<form on:submit={handleSubmit}>
 		<Inputbar bind:value={city} />
 		<Button type="submit" caption="Search" />
 	</form>
 </Text>
+
+
 	<section id="searchitems">
 		{#each searchitems as searchitem}
 			<Card city={searchitem.city} temp={searchitem.temp} icon={searchitem.icon} />
@@ -77,7 +81,7 @@
   height: 100vh; 
   }
    section {
-  
+   color:rgb(28, 83, 125);
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;

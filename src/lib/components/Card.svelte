@@ -26,7 +26,7 @@
   card {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 5px;
-    background: white;
+    background: #6B91A4;
     margin: 1.5rem;
     height: 14rem;
     text-align: center;
@@ -52,7 +52,7 @@
  
   h2 {
     font-size: 1rem;
-    color: #808080;
+    color: #1F2937;
   }
 
 

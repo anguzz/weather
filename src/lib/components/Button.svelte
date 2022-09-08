@@ -15,10 +15,10 @@
   button,
   a {
     font: inherit;
-    border: 1px solid #00aaff;
-    background: #00aaff;
+    border: 1px solid #6B91A4;
+    background: #1F2937;
     padding: 0.5rem 1rem;
-    color: white;
+    color: #6B91A4;
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.26);
     cursor: pointer;
@@ -33,8 +33,9 @@
   button:active,
   a:hover,
   a:active {
-    background: #e40763;
-    border-color: #e40763;
+    background: #6B91A4;
+    border-color: #6B91A4;
+    color:#1F2937;
     box-shadow: 1px 1px 8px rgba(77, 51, 51, 0.26);
   }
 
