@@ -12,7 +12,7 @@
   input[type=text] {
       width: 35%;
       box-sizing: border-box;
-      border: 1px solid #ccc;
+      border: 1px solid rgb(204, 204, 204);
       border-bottom: 1px solid #ccc;
       font-size: 16px;
       background-color: none;
