@@ -78,12 +78,12 @@
 
 <style>
 	  #bg {
-  background-color: rgb(68, 68, 116);
+  background-color: #406E8E;
   padding-top:5rem;
   height: 100vh; 
   }
    section {
-   color:rgb(28, 83, 125);
+   color:#23395B;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;

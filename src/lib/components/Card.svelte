@@ -24,9 +24,9 @@
 
 <style>
   card {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 8px #161925;
     border-radius: 5px;
-    background: #6B91A4;
+    background: #161925;
     margin: 1.5rem;
     height: 10rem;
     text-align: center;
@@ -56,10 +56,13 @@
     font-family: "Roboto Slab", sans-serif;
   }
 
- 
+ h1{
+  color: #ffffff;
+
+ }
   h2 {
     font-size: 1rem;
-    color: #1F2937;
+    color: #ffffff;
   }
 
 

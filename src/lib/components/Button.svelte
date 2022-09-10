@@ -15,10 +15,10 @@
   button,
   a {
     font: inherit;
-    border: 1px solid #6B91A4;
-    background: #1F2937;
+    border: 1px solid #ffffff;
+    background: #161925;
     padding: 0.5rem 1rem;
-    color: #6B91A4;
+    color: #ffffff;
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.26);
     cursor: pointer;
@@ -44,7 +44,7 @@
   button:disabled:active {
     background: #ccc;
     border-color: #ccc;
-    color: #959595;
+    color: #CBF7ED;
     box-shadow: none;
     cursor: not-allowed;
   }
