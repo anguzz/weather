@@ -14,7 +14,7 @@
       box-sizing: border-box;
       border: 1px solid rgb(204, 204, 204);
       border-bottom: 1px solid #ccc;
-      font-size: 16px;
+      font-size: 13px;
       margin-left:60px;
       background-color: none;
       background-position: 6px 6px; 
