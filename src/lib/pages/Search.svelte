@@ -57,7 +57,7 @@
 <div id="bg">
 
 	<Text>
-		<h1 class="text-5xl m-6 {color} font-light"> 🌩 Weather app ☀️ </h1>
+		<h1 class="text-5xl m-6 {color} font-light"> 🌩 Weather ☀️ </h1>
 
 		<br>
 	<form on:submit={handleSubmit}>
