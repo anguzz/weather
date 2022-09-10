@@ -15,6 +15,7 @@
       border: 1px solid rgb(204, 204, 204);
       border-bottom: 1px solid #ccc;
       font-size: 16px;
+      margin-left:30px;
       background-color: none;
       background-position: 6px 6px; 
       background-repeat: no-repeat;

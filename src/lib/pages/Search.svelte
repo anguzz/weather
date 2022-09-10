@@ -7,7 +7,8 @@
  import Anchor from "$lib/components/Anchor.svelte";
  export let result = "";
  export let city = "";
-  
+ let color = "text-white-700";
+
  /**
 * @type {any[]}
 */
@@ -56,8 +57,9 @@
 <div id="bg">
 
 	<Text>
-		
-		
+		<h1 class="text-5xl m-6 {color} font-light"> 🌩 Weather app ☀️ </h1>
+
+		<br>
 	<form on:submit={handleSubmit}>
 		<Inputbar bind:value={city} />
 		<Button type="submit" caption="Search" />

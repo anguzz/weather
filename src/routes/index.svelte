@@ -4,7 +4,6 @@
 
 <script lang="ts">
   import SEO from "svelte-seo";
-  import Home from "$lib/pages/Home.svelte";
   import Footer from "$lib/pages/Footer.svelte";
  import Search from  "$lib/pages/Search.svelte";
 /* basic colors at  https://tailwindcss.com/docs/customizing-colors   more at  https://hypercolor.dev/   */ 
@@ -18,7 +17,7 @@
   canonical="link"
 />
 
-<Home />
+
 <!--About me/bio-->
 <Search/>
 
